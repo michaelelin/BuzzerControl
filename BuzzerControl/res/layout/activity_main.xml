@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:orientation="horizontal" >
+
+	<TextView
+	    android:id="@+id/playerView9"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginLeft="64dp"
+	    android:layout_marginTop="128dp"
+	    android:text="@string/player9"
+	    android:onClick="editPlayer"
+	    android:clickable="true"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+	<TextView
+	    android:id="@+id/playerView8"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/playerView9"
+	    android:layout_below="@+id/playerView9"
+	    android:layout_marginTop="64dp"
+	    android:text="@string/player8"
+	    android:onClick="editPlayer"
+	    android:clickable="true"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+	<TextView
+	    android:id="@+id/playerView7"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/playerView8"
+	    android:layout_below="@+id/playerView8"
+	    android:layout_marginTop="64dp"
+	    android:text="@string/player7"
+	    android:onClick="editPlayer"
+	    android:clickable="true"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+	<TextView
+	    android:id="@+id/playerView6"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/playerView7"
+	    android:layout_below="@+id/playerView7"
+	    android:layout_marginTop="64dp"
+	    android:text="@string/player6"
+	    android:onClick="editPlayer"
+	    android:clickable="true"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	<TextView
+	    android:id="@+id/playerView4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginRight="64dp"
+	    android:layout_marginTop="128dp"
+	    android:text="@string/player4"
+	    android:onClick="editPlayer"
+	    android:clickable="true"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+	<TextView
+	    android:id="@+id/playerView3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/playerView4"
+	    android:layout_below="@+id/playerView4"
+	    android:layout_marginTop="64dp"
+	    android:text="@string/player3"
+	    android:onClick="editPlayer"
+	    android:clickable="true"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+	<TextView
+	    android:id="@+id/playerView2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/playerView3"
+	    android:layout_below="@+id/playerView3"
+	    android:layout_marginTop="64dp"
+	    android:text="@string/player2"
+	    android:onClick="editPlayer"
+	    android:clickable="true"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+	<TextView
+	    android:id="@+id/playerView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/playerView2"
+	    android:layout_below="@+id/playerView2"
+	    android:layout_marginTop="64dp"
+	    android:text="@string/player1"
+	    android:onClick="editPlayer"
+	    android:clickable="true"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<fragment
+	    android:name="com.michaelelin.buzzercontrol.TimerFragment"
+	    android:id="@+id/timerFragment"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="48dp" />
+
+	<TextView
+	    android:id="@+id/teamAView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/playerView9"
+	    android:layout_below="@+id/timerFragment"
+	    android:layout_marginTop="-32dp"
+	    android:text="@string/team_a"
+	    android:textSize="32sp"
+	    android:textStyle="bold" />
+	
+	<TextView
+	    android:id="@+id/teamBView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/playerView4"
+	    android:layout_below="@+id/timerFragment"
+	    android:layout_marginTop="-32dp"
+	    android:text="@string/team_b"
+	    android:textSize="32sp"
+	    android:textStyle="bold" />
+
+	<Button
+	    android:id="@+id/buttonTossup"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/playerView8"
+	    android:layout_alignBottom="@+id/playerView8"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="192dp"
+	    android:text="@string/mode_tossup"
+	    android:onClick="nextTossup" />
+
+	<Button
+	    android:id="@+id/buttonBonus"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/playerView3"
+	    android:layout_alignBottom="@+id/playerView3"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="192dp"
+	    android:text="@string/mode_bonus"
+	    android:onClick="nextBonus" />
+
+	<Button
+	    android:id="@+id/buttonToggleTimer"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/playerView7"
+	    android:layout_centerHorizontal="true"
+	    android:text="Do Stuff"
+	    android:onClick="toggleTimer" />
+
+</RelativeLayout>

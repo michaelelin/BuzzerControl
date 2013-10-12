@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Buzzer Control</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Buzzer Control</string>
+    <string name="title_activity_team_options">Team Options</string>
+    <string name="button_add10">Add 10 Points</string>
+    <string name="button_add4">Add 4 Points</string>
+    <string name="button_sub10">Subtract 10 Points</string>
+    <string name="button_sub4">Subtract 4 Points</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="player3">Player 3</string>
+    <string name="player4">Player 4</string>
+    <string name="player6">Player 6</string>
+    <string name="player7">Player 7</string>
+    <string name="player8">Player 8</string>
+    <string name="player9">Player 9</string>
+    <string name="button_bonus">Give Bonus</string>
+    <string name="timer_init">5.00</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="mode_tossup">Tossup</string>
+    <string name="mode_bonus">Bonus</string>
+    <string name="title_activity_player_options">Player Options</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="player_rename">Rename Player</string>
+    <string name="update">Update</string>
+
+</resources>
